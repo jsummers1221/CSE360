@@ -30,7 +30,7 @@ public class AddingMachine {
 	 */
 	public void add (int value) {
 		total += value;
-		history += "+ " + Integer.toString(value) + " ";
+		history += " + " + Integer.toString(value);
 	}
 	
 	/**
@@ -39,7 +39,7 @@ public class AddingMachine {
 	 */
 	public void subtract (int value) {
 		total -= value;
-		history += "- " + Integer.toString(value) + " ";
+		history += " - " + Integer.toString(value);
 	}
 		
 	/**

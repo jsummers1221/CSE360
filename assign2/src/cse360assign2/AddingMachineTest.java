@@ -35,5 +35,17 @@ class AddingMachineTest {
 		boolean pass = (test2.toString().equals("0 - 3") && test2.getTotal() == -3);
 		assertTrue(pass);
 	}
+	
+	/**
+	 * Test 3. Tests clear function.
+	 */
+	@Test
+	void test3() {
+		AddingMachine test3 = new AddingMachine();
+		test3.subtract(3);
+		test3.clear();
+		boolean pass = (test3.toString().equals("0") && test3.getTotal() == 0);
+		assertTrue(pass);
+	}
 
 }
